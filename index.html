@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fdf2f8, #dbeafe);
+      color: #2c3e50;
+      overflow-x: hidden;
+    }
+
+   
+    .navbar {
+      background: linear-gradient(90deg, #ffe4e1, #fcd5ce);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 70px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: fadeDown 1s ease forwards;
+    }
+    .navbar img {
+      height: 55px;
+      width: 55px;
+      border-radius: 50%;
+      border: 2px solid #2c3e50;
+      transform: scale(0);
+      animation: popIn 0.8s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      color: #2C3E50;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      background: #2c3e50;
+      color: #fff;
+      transform: scale(1.15);
+    }
+
+    .nav-links a.active {
+      background: #e67e22;
+      color: #fff;
+    }
+
+   
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: #2C3E50;
+      border-radius: 2px;
+      transition: 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(180deg, #ffe4e1, #fcd5ce);
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+        gap: 20px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        animation: slideDown 0.5s ease forwards;
+      }
+      .nav-links.show {
+        display: flex;
+      }
+      .hamburger {
+        display: flex;
+      }
+    }
+
+  
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #e0f7fa, #fdf2f8);
+      box-shadow: inset 0 -4px 12px rgba(0,0,0,0.05);
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      text-align: left;
+      padding: 20px;
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slideFadeInLeft 1.5s ease forwards;
+    }
+    .hero-text h1 {
+      font-size: 2.8rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 12px 0;
+    }
+    .hero-text span {
+      font-weight: bold;
+    }
+    .hero img {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      object-fit: contain;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      margin-top: 20px;
+      opacity: 0;
+      transform: translateX(50px);
+      animation: slideFadeInRight 1.5s ease forwards, float 4s ease-in-out infinite;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes popIn {
+      to {transform: scale(1);}
+    }
+    @keyframes slideDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes slideFadeInLeft {
+      from {opacity: 0; transform: translateX(-50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes slideFadeInRight {
+      from {opacity: 0; transform: translateX(50px);}
+      to {opacity: 1; transform: translateX(0);}
+    }
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0);}
+      50% { transform: translateY(-10px) translateX(5px);}
+      100% { transform: translateY(0) translateX(0);}
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div>
+      <img src="Name.png" alt="Logo"/>
+    </div>
+
+    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="nav-links">
+      <a href="WorkExperience.html" class="active">Work Experience</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </div>
+  </div>
+
+ 
+  <div class="hero">
+    <div class="hero-text">
+      <h1>👋 Welcome to my profile</h1>
+      <p>I am a <span style="color:#e74c3c;">Front-End Developer</span></p>
+      <p>Look into my <span style="color:#e67e22;">profile</span></p>
+    </div>
+    <img src="intro.jpg" alt="Profile Intro"/>
+  </div>
+
+</body>
+</html>

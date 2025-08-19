@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Experience</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #fdf2f8);
+      color: #222;
+    }
+
+    .workexperience {
+      display: grid;
+      gap: 30px;
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .work-card {
+      padding: 30px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .work-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    }
+
+    .work-card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle at top left, rgba(255,255,255,0.25), transparent 60%);
+      transform: rotate(25deg);
+    }
+
+    .work-card img {
+      float: left;
+      height: 65px;
+      width: 65px;
+      margin-right: 20px;
+      border-radius: 50%;
+      padding: 8px;
+      background: #fff;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .work-card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #004aad;
+    }
+
+    .work-card h3 {
+      margin: 4px 0 20px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .work-card ul {
+      margin: 0;
+      padding-left: 25px;
+      line-height: 1.9;
+      color: #222;
+      font-size: 1rem;
+    }
+
+
+    .work1 {
+      background: linear-gradient(135deg, #ffffff, #e3f2fd);
+      border-left: 8px solid #0078D7;
+    }
+
+    .work2 {
+      background: linear-gradient(135deg, #ffffff, #ffe4e1);
+      border-left: 8px solid #ff6f61;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="workexperience">
+
+    <div class="work-card work1">
+      <img src="work.jpg" alt="Work Icon">
+      <h2>XML Developer</h2>
+      <h3>Trishoka Digital Services</h3>
+      <ul>
+        <li>Developed and maintained structured XML content for digital publishing, ensuring compliance with DTDs and schema validation rules.</li>
+        <li>Transformed and styled XML documents using XSLT and XPath for output to formats such as HTML and ePub.</li>
+        <li>Collaborated with content teams to standardize document structures and improve content workflow efficiency.</li>
+        <li>Performed quality checks and debugging to ensure well-formed XML and adherence to publishing standards.</li>
+      </ul>
+    </div>
+
+    <div class="work-card work2">
+      <img src="work.jpg" alt="Work Icon">
+      <h2>Full Stack Developer Intern</h2>
+      <h3>Consensus Academy</h3>
+      <ul>
+        <li>Developed a full-featured online Food Delivery System, gaining hands-on experience in full stack development.</li>
+        <li>Led a team of 4 interns, overseeing project planning, development tasks, and deployment.</li>
+        <li>Improved user satisfaction by 15% by implementing high hygiene standards and contactless delivery features.</li>
+        <li>Delivered a platform offering 24/7 access, personalized recommendations, and a wide range of cuisines for enhanced user convenience.</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

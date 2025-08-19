@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <style>
+   
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #dbeafe, #fdf2f8, #e0f2fe, #ffe4e1);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #333;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+   
+    .SAE {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .SAE:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+   
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      padding: 12px;
+      display: inline-block;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      color: #004aad;
+      background: linear-gradient(90deg, #dbeafe, #bfdbfe);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: #ff5722;
+      background: linear-gradient(90deg, #ffe4e1, #ffd1c4);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+  
+    .Skills ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      line-height: 2;
+      font-size: 1.1rem;
+    }
+
+    .Skills li {
+      margin: 15px 0;
+      padding: 14px 18px;
+      background: #ffffffd9;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .Skills li:hover {
+      background: #e0f2fe;
+      transform: translateX(10px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+   
+    .Education p {
+      margin: 0;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.25rem;
+      background: #ffffffd9;
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .Education p:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    
+    @media (max-width: 600px) {
+      .SAE {
+        padding: 25px;
+      }
+      h1 {font-size: 2rem;}
+      h2 {font-size: 1.7rem;}
+      .Skills li {font-size: 1rem;}
+      .Education p {font-size: 1rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="SAE">
+
+    <div class="Skills">
+      <h1>💻 Skills</h1>
+      <ul>
+        <li>⚡ <b>Programming Languages</b>: JavaScript, Python, TypeScript, HTML5, CSS3, SQL</li>
+        <li>⚡ <b>Libraries & Frameworks</b>: React.js, React Native, Bootstrap</li>
+        <li>⚡ <b>Web & App Development Tools</b>: VS Code, Git & GitHub, Chrome DevTools, JSON, Responsive Design, Web Performance Optimization</li>
+        <li>⚡ <b>Databases & Querying</b>: SQL, MySQL</li>
+        <li>⚡ <b>Soft Skills</b>: Great Communication • Focused • Fast Learner • Highly Adaptive • Problem Solving • Time Management</li>
+      </ul>
+    </div>
+
+    <div class="Education">
+      <h2>🎓 Education</h2>
+      <p>
+        <b>Chaitanya Bharathi Institute of Technology</b><br/>
+        Bachelor of Science in Computer Science
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>

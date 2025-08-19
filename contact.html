@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f2f6fc;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      width: 300px;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .mail-btn {
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: #fff;
+      border: none;
+      padding: 14px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 15px auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .mail-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .mail-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #2575fc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-box">
+    <h2>Contact Me</h2>
+
+
+    <a href="mailto:youremail@example.com">
+      <button class="mail-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 
+          1.1.9 2 2 2h16c1.1 0 2-.9 
+          2-2V6c0-1.1-.9-2-2-2zm0 
+          4-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        Send Message
+      </button>
+    </a>
+
+   
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank">🔗 LinkedIn</a>
+      <a href="https://twitter.com/yourprofile" target="_blank">🐦 Twitter</a>
+    </div>
+  </div>
+
+</body>
+</html>
